@@ -1,0 +1,21 @@
+<div class="task-panel">
+  <div class="jumbotron">
+    <h1 class="display-4 title">
+      <%= @task.title %>
+      <%=link_to '🖋️ edit', edit_task_url, class: 'btn btn-primary'%>
+    </h1>
+    <p class="lead">
+      <%= @task.details %>
+    </p>
+    <hr class="my-4">
+    <br>
+    <div class="d-flex justify-content-between p-0 completed">
+      <%if @task.completed %>
+        <h4 class="alert alert-success">This task is completed</h4>
+      <%else%>
+        <h4 class="alert alert-danger">This task is not complete</h4>
+      <%end%>
+    </div>
+    <%=link_to 'Back to list', tasks_url, class: 'task-link'%>
+  </div>
+</div>

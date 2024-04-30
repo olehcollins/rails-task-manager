@@ -1,0 +1,87 @@
+.tasks-box {
+  font-size: 1.5rem;
+  /* border: 1px solid pink; */
+  margin-left: 3rem;
+  margin-top: 4rem;
+  .tasks {
+    margin-left: 2rem;
+  }
+
+  .form-check-label {
+    margin-bottom: 1rem;
+
+    .delete-btn {
+      font-size: 10px;
+      margin-left: 1rem;
+      padding: 1px 4px;
+    }
+  }
+}
+
+.task-link {
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+.task-link:hover {
+  color: red;
+}
+
+.task-panel {
+  .jumbotron {
+    margin-left: 3rem;
+    margin-top: 4rem;
+    padding: 1rem;
+    margin-top: 4rem;
+    border: 1px solid pink;
+    border-radius: 1rem;
+    width: 40rem;
+
+    .title {
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+
+      .btn {
+        display: inherit;
+        width: 7rem;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  .task-link {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+.form {
+  margin-left: 3rem;
+  margin-top: 1rem;
+
+  .form-label {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .form-control {
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    border: 1px solid pink;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+  }
+}
+
+.new-task {
+  h1 {
+    margin-top: 4rem;
+    margin-left: 3rem;
+  }
+
+  .back-link {
+    margin-left: 2rem;
+  }
+}

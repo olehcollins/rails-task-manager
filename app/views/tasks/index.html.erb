@@ -1,0 +1,16 @@
+<div class="tasks-box form-check">
+  <h1>My Tasks</h1>
+  <hr class="col-4">
+  <form action="" class="tasks" method="">
+    <%@tasks.each do |task|%>
+      <label for="tasks<%=task.id%>" class="form-check-label">
+        <input type="checkbox" name="tasks<%=task.id%>" id="<%=task.id%>" value="Task<%=task.id%>" class="form-check-input">
+        <%=link_to task.title.capitalize, task_url(task), class: 'task-link'%>
+        <%=link_to 'delete', delete_url(task), data: { turbo_method: :delete, turbo_confirm: 'are you sure?' }, class: 'delete-btn btn btn-danger'%>
+      </label>
+      <br>
+    <%end%>
+  </form>
+  <hr class="col-4">
+  <%=link_to 'add', new_task_url, class: 'task-link btn btn-primary col-2'%>
+</div>
